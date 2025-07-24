@@ -1,9 +1,13 @@
 from typing import List, Dict,Union
 import json
+import os
+from dotenv import load_dotenv
 from mem0 import MemoryClient
 from crewai.tools import tool
 
-client = MemoryClient(api_key="m0-fWhVHUJSlRYEREAmzIlLqrkaYu7i5fN1RbQWjURp")
+# Load environment variables
+load_dotenv()
+client = MemoryClient(api_key="os.getenv('MEMORY_API_KEY')")
 
 def get_from_memory(query: str) -> List[Dict[str, Union[str, list]]]:
     """
