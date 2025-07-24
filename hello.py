@@ -7,7 +7,7 @@ from crewai.tools import tool
 
 # Load environment variables
 load_dotenv()
-client = MemoryClient(api_key="os.getenv('MEMORY_API_KEY')")
+client = MemoryClient(api_key=os.getenv("MEMORY_API_KEY"))
 
 def get_from_memory(query: str) -> List[Dict[str, Union[str, list]]]:
     """
