@@ -1,0 +1,18 @@
+[project]
+name = "crew"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "crewai-tools>=0.55.0",
+    "crewai>=0.148.0",
+    "fitz>=0.0.1.dev2",
+    "google-generativeai>=0.8.5",
+    "pinecone>=7.3.0",
+    "pypdf2>=3.0.1",
+    "fastapi>=0.116.1",
+    "trulens>=2.1.0",
+    "pandas>=2.3.1",
+    "mem0ai>=0.1.114",
+]

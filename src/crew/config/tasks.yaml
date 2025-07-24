@@ -1,0 +1,14 @@
+Reacall_memory:
+  description: Recall past interactions and information related to kartavya.
+  expected_output: |
+    A summary of relevant past interactions and information related to user query {query} use get_from_memory tool with {user_id} ask it questions like "What is user name" etc.
+
+Search_task:
+  description: Search for information in the vector database or in the internet according to the user's query you can also get context from memory using get_from_memory about some details about user or previous chat (if exists) make your query and ask it and return relevant results user_query:{query}.
+  expected_output: |
+    A list of relevant results from the vector database or internet search.
+
+replier:
+  description: Craft human-like reply to {query} reply as we because you are representing kartavya tech using results of previous agent if user says hello or hi greet him properly.
+  expected_output: |
+    A human-like reply to the user's query, without any formatting.
